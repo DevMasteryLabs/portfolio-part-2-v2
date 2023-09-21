@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 function Skills() {
 
@@ -25,7 +26,7 @@ function Skills() {
                 <img src={tech.image} className="card-img-top" alt={tech.name} />
                 <div className="card-body">
                   <h5 className="card-title">{tech.name}</h5>
-                  <a href="#" className="btn btn-primary">Learn about</a>
+                  <Link to={tech.id} className="btn btn-primary">Learn about</Link>
                 </div>
               </div>
             </div>
